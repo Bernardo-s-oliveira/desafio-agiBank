@@ -23,3 +23,6 @@ Execute `npm test` (ou `npm t` para abreviar) para executar todos os testes no m
 
 ### Modo interativo
 Execute `npm run cy:open` para abrir o Cypress Test Runner para executar testes no modo interativo usando uma janela de visualização da área de trabalho.
+
+# Integração contínua
+Foi implementado o pipeline de integração contínua com GitHub Actions. O arquivo de configuração do CI é o .github/workflows/ci.yml. Em todo push no branch main o pipeline é executado. Como uma forma de manter padronizado a indentação/estrutura do código, foi utilizado a biblioteca `lint` como obrigatória a aprovação pra poder executar os cenários na pipeline.
