@@ -5,5 +5,5 @@ Cypress.Commands.add('pesquisar', (value,palavraChave) => {
   } else {
     cy.get('.mobile-search > .search-form > label > .search-field').type(' {Enter}')
   }
-  cy.get('.archive-title:contains('+ palavraChave +')').should('be.visible')  
+  cy.get('.archive-title:contains('+ palavraChave +')').should('be.visible')
 })
